@@ -14,3 +14,4 @@ def bubble_sort(li):
         if no_swap:
             return li
     return li
+

@@ -1,4 +1,3 @@
-# Import the merge_sort and bubble_sort functions from the sorting module
 import time
 import random
 import matplotlib.pyplot as plt
@@ -41,7 +40,7 @@ def merge_sort(numbers):
         return numbers
 
 def bubble_sort(numbers):
-    # Set swap counter to a non-zero value
+  
     swap_counter = -1
 
     # Keep looping until the swap counter is 0
@@ -62,26 +61,25 @@ def bubble_sort(numbers):
 
 
 def measure_time(func, numbers):
-    # Record the starting time
+ 
     start_time = time.perf_counter()
 
     # Sort the list of numbers using the provided sorting function
     sorted_numbers = func(numbers)
 
-    # Record the ending time
+
     end_time = time.perf_counter()
 
     # Return the elapsed time in seconds
     return end_time - start_time
 
-# Generate a list of random numbers
 numbers = [random.randint(1, 100) for _ in range(100)]
 
 # Measure the time it takes for each sorting algorithm to sort the list
 merge_sort_time = measure_time(merge_sort, numbers)
 bubble_sort_time = measure_time(bubble_sort, numbers)
 
-# Print the results
+
 print(f"Merge sort took {merge_sort_time:.4f} seconds")
 print(f"Bubble sort took {bubble_sort_time:.4f} seconds")
 

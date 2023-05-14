@@ -7,4 +7,5 @@ def binary(num):
         binary(num // 2)
     print(num % 2, end=' ')
 
-print (binary(10))
+binary(3)
+print()
